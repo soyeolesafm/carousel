@@ -4,17 +4,17 @@
   box-sizing: border-box;
   list-style: none;
 }
-.button i {
-  color: black;
-}
+
 .carousel {
   position: relative;
   height: 600px;
   width: 80%;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel__track--container {
@@ -28,4 +28,41 @@
   top: 0;
   bottom: 0;
   width: 100%;
+}
+.carousel__buttons {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel__button--left {
+  left: -40px;
+}
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__buttons i {
+  width: 12px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgb(0, 0, 0, 0.3);
+  margin: 8px;
+}
+
+.carousel__indicator.current__slide {
+  background: rgb(0, 0, 0, 0.9);
 }
