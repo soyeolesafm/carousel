@@ -7,7 +7,7 @@
 
 .carousel {
   position: relative;
-  height: 600px;
+  height: 80vh;
   width: 70%;
   margin: 25px auto;
 }
@@ -46,6 +46,7 @@
 
 .carousel__buttons i {
   width: 12px;
+  font-size: 1.5em;
 }
 
 .carousel__nav {
@@ -76,13 +77,17 @@
   position: absolute;
 }
 
-.icons {
+.footer__nav {
+  display: flex;
   margin: auto;
+  width: 35%;
   font-size: 2.5em;
   color: #f7f7e8;
+  list-style: none;
 }
-.icons i {
+.icons {
   margin: auto;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .carousel {
@@ -92,7 +97,11 @@
   .footer {
     height: 75px;
   }
-  .icons {
+  .footer__nav {
     font-size: 3em;
+    width: 12.5%;
+  }
+  .icons:hover {
+    opacity: 0.8;
   }
 }
