@@ -81,13 +81,18 @@
   display: flex;
   margin: auto;
   width: 35%;
-  font-size: 2.5em;
-  color: #f7f7e8;
+
   list-style: none;
 }
-.icons {
+.icon {
   margin: auto;
   cursor: pointer;
+  font-size: 2.5em;
+  color: #f7f7e8;
+}
+
+.icons a {
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .carousel {
@@ -97,11 +102,10 @@
   .footer {
     height: 75px;
   }
-  .footer__nav {
+  .icon {
     font-size: 3em;
-    width: 12.5%;
   }
-  .icons:hover {
+  .icon:hover {
     opacity: 0.8;
   }
 }
