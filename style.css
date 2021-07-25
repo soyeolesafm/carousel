@@ -8,7 +8,7 @@
 .carousel {
   position: relative;
   height: 600px;
-  width: 80%;
+  width: 70%;
   margin: 25px auto;
 }
 .image {
@@ -56,13 +56,43 @@
 
 .carousel__indicator {
   border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  border-radius: 25%;
+  width: 45px;
+  height: 7px;
   background: rgb(0, 0, 0, 0.3);
   margin: 8px;
 }
 
 .carousel__indicator.current__slide {
   background: rgb(0, 0, 0, 0.9);
+}
+
+.footer {
+  background-color: #557174;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.icons {
+  margin: auto;
+  font-size: 2.5em;
+  color: #f7f7e8;
+}
+.icons i {
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .carousel {
+    margin-top: 75px;
+    width: 80%;
+  }
+  .footer {
+    height: 75px;
+  }
+  .icons {
+    font-size: 3em;
+  }
 }
