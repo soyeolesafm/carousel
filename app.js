@@ -28,5 +28,16 @@ slides.forEach(setSlidePosition)
 // *slide.style.left = slideWidth * index + 'px'})
 // but is better practice to do it this way so it doesn't get consfusing 
 
+// -------------------------NEXT & PREV BUTTON------------------------------------
+// ! add an event listener to next  button so we select the next slide and
+// *next
+rightButton.addEventListener('click', e => {
+    alert('me tochaste!!')
+})
+// * previous butto
+leftButton.addEventListener('click', e =>{
+    alert('stop it!')
+})
+
 // ! ldebugger
 console.log(slides[0]);
